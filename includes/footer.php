@@ -12,7 +12,7 @@
             <!-- /.row -->
         </footer>
 
-    </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
