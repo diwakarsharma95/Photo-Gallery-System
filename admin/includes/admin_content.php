@@ -7,6 +7,11 @@
                 Dashboard
                 <small>Subheading</small>
             </h1>
+            <?php
+                if ($connection){
+                    echo "true";
+                }
+            ?>
             <ol class="breadcrumb">
                 <li>
                     <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
