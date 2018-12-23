@@ -1,17 +1,21 @@
+<?php
+require_once "database.php";
+?>
 <div class="container-fluid">
 
     <!-- Page Heading -->
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">
-                Dashboard
+                Admin
                 <small>Subheading</small>
             </h1>
             <?php
-                if ($connection){
-                    echo "true";
-                }
+                $result = $database->query("select * from users");
+                $user_found = mysqli_fetch_array($result);
+                echo $user_found['username'];
             ?>
+
             <ol class="breadcrumb">
                 <li>
                     <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
